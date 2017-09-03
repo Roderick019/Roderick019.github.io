@@ -1,0 +1,76 @@
+body{
+  background-color: #262626;
+  color: #B3B3B3;
+}
+
+#avatar{
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 50%;  
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0, 0.4);  
+}
+
+#name{
+  text-align: center;
+  color: white;
+}
+
+#nav {
+  text-align: center;
+  background-color: #404040;
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0, 0.4);
+  margin: 0% 10% 0% 10%;
+}
+#nav > h1{
+  display: inline;
+  padding: 0% 3%;
+  cursor: pointer;   
+}
+#nav > h1:hover{
+  color:white;  
+}
+
+#content{
+  height: 500px;
+}
+
+#info, #experience{
+  text-align: center;
+}
+#info > div, #experience > div{
+  width: 30%;
+  margin: 0 0% 0 12%;
+  float:left;
+  text-align: justify;  
+}
+#info > div >h1, #experience > div >h1{
+  text-align: center;
+}
+
+#knowledge{
+  margin: 2.5% 20% 0% 20%;
+}
+
+.language:hover{
+  cursor: pointer;  
+}
+
+.language_info{
+  text-align: justify;
+}
+
+#title, .language_info > h1{
+  color: #DADADA;
+}
+
+#social{
+  text-align: center; 
+}
+.social_link{
+  width: 30%;
+  float: left;
+  margin: 5% 0% 0% 12%;
+}
+
+
