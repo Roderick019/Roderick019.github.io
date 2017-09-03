@@ -7,8 +7,8 @@ body{
 a{
   color: #B3B3B3;
   font-weight: bold;
-  
 }
+
 #avatar{
   display: block;
   margin: auto;
@@ -41,18 +41,21 @@ a{
   height: 500px;
 }
 
-#info, #experience{
+.element >h1, .element >h1{
   text-align: center;
 }
-#info > div, #experience > div{
+
+.section{
+  display:flex;
+  flex-direction:column; 
+}
+
+.element{
   width: 30%;
   margin: 0 0% 0 12%;
   float:left;
-  text-align: justify;  
-}
-#info > div >h1, #experience > div >h1{
-  text-align: center;
-}
+  text-align: justify; }
+
 
 #knowledge{
   margin: 2.5% 15% 0% 20%;
