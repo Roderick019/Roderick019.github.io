@@ -1,8 +1,14 @@
 body{
   background-color: #262626;
-  color: #B3B3B3;
+  color: #B3B3B3; 
+  
 }
 
+a{
+  color: #B3B3B3;
+  font-weight: bold;
+  
+}
 #avatar{
   display: block;
   margin: auto;
@@ -49,15 +55,18 @@ body{
 }
 
 #knowledge{
-  margin: 2.5% 20% 0% 20%;
+  margin: 2.5% 15% 0% 20%;
 }
 
-.language:hover{
+.language{
   cursor: pointer;  
+  margin: 0% 1%;
 }
 
-.language_info{
+.language_info, #text{
   text-align: justify;
+  font-family: 'Roboto Condensed', sans-serif;
+  
 }
 
 #title, .language_info > h1{
