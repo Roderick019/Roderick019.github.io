@@ -1,5 +1,5 @@
 function showSection(section, position) {
-  $( 'div.section' ).each(function( index ) {
+  $( 'div.container' ).each(function( index ) {
     if ( $( this ).attr('id') != section){
       $( this ).css('display','none');
     }else{

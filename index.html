@@ -6,9 +6,8 @@
 <script type='text/javascript' src='jquery-3.2.1.min.js'></script>
 <script type='text/javascript' src='makeitbeautiful.js'></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
-</script>
-<link rel='stylesheet' href='styles.css'>
+<link rel="stylesheet" type="text/css" media="(max-width: 980px)  " href="mobile_style.css">
+<link rel='stylesheet' type='text/css' media='(min-width: 981px)' href='style.css'>
 </head>
 <body>
 <div id='header'>
@@ -23,7 +22,7 @@
   </div>
 </div>
 <div id='content' >
-  <div id='info' class='section container' style='display:block'>
+  <div id='info' class='container' style='display:block'>
     <div id='bio' class='element'> 
       <h1><label id='title'>Bio</label></h1>
       <div id='text'>
@@ -76,7 +75,7 @@
       </div>
     </div>
   </div>
-  <div id='experience' class='section container' style='display:none'>
+  <div id='experience' class='container' style='display:none'>
     <div id='practices' class='element'>
         <h1><label id='title'>Prácticas</label></h1>
         <div id='text'>
@@ -126,8 +125,8 @@
         </div>
     </div>
   </div>
-  <div id='knowledge' class='section container' style='display:none'>
-    <div id="knowledge_imgs">
+  <div id='knowledge' class='container' style='display:none'>
+    <div id="knowledge_imgs" >
       <img onclick='showLanguage("html")' class='language' width='150px' src='resources/html5.png'>
       <img onclick='showLanguage("css")' class='language' width='150px' src='resources/css3.png'>
       <img onclick='showLanguage("mysql")' class='language' width='150px' src='resources/mysql.png' >
@@ -197,7 +196,7 @@
       </div>    
     </div>
   </div>
-  <div id='social' class='section container' style='display:none'>
+  <div id='social' class='container' style='display:none'>
     <div class='social_link'>
       <a href='mailto:cristiancvacas@gmail.com'>
         <img src='resources/email.png' width='150px' >

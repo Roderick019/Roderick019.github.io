@@ -1,7 +1,6 @@
 body{
   background-color: #262626;
-  color: #B3B3B3; 
-  
+  color: #B3B3B3;  
 }
 
 a{
@@ -45,11 +44,11 @@ a{
   text-align: center;
 }
 
-.section{
-  display:flex;
+.container{
+  display: flex;
   flex-direction:column; 
+  
 }
-
 .element{
   width: 30%;
   margin: 0 0% 0 12%;
