@@ -44,17 +44,12 @@ a{
   text-align: center;
 }
 
-.container{
-  display: flex;
-  flex-direction:column; 
-  
-}
 .element{
-  width: 30%;
-  margin: 0 0% 0 12%;
-  float:left;
-  text-align: justify; }
-
+  width: auto;
+  margin: 0 12% 0 12%;
+  text-align: justify; 
+  font-size: 30px;
+}
 
 #knowledge{
   margin: 2.5% 15% 0% 20%;
@@ -63,12 +58,12 @@ a{
 .language{
   cursor: pointer;  
   margin: 0% 1%;
+  width: 30%;
 }
 
 .language_info, #text{
   text-align: justify;
-  font-family: 'Roboto Condensed', sans-serif;
-  
+  font-family: 'Roboto Condensed', sans-serif;  
 }
 
 #title, .language_info > h1{
