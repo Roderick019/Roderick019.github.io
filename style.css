@@ -21,6 +21,7 @@ a{
   color: white;
 }
 
+
 #nav {
   text-align: center;
   background-color: #404040;
@@ -37,7 +38,7 @@ a{
 }
 
 #content{
-  height: 500px;
+  height: 500px;  
 }
 
 .element >h1, .element >h1{
@@ -48,7 +49,9 @@ a{
   width: 30%;
   margin: 0 0% 0 12%;
   float:left;
-  text-align: justify; }
+  text-align: justify;
+  margin-bottom: 3%;
+}
 
 #knowledge{
   margin: 2.5% 15% 0% 20%;
