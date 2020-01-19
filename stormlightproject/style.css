@@ -1,0 +1,32 @@
+.word-separator {
+  width: 50px;
+}
+
+.paragraph {
+  display: flex;
+}
+
+.paragraph-separator {
+  height: 50px;
+}
+
+.character {
+  width: 10%;
+}
+
+.button-symbol {
+  width: 5%;
+  margin: 0.5rem;
+}
+
+.button-symbol-image {
+  width: 100%;
+}
+
+.button-symbol-label {
+  color: black;
+}
+
+.container {
+  width: 50%;
+}
