@@ -10,7 +10,13 @@
 <body> 
   <div id="char-to-roshar" class="container">
     <h2>To Women's writing</h2>
-    <textarea type="text" id="text-input" placeholder="Write something here" onkeyup="transcribeFromInput()"></textarea>
+    <div class="">
+      <textarea type="text" id="text-input" placeholder="Write something here" onkeyup="transcribeFromInput()"></textarea>
+      <label>Image size</label>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="5" class="slider" oninput="changeImageWidth(this.value)" >
+      </div>
+    </div>
     <div id="image-container"></div>
   </div>
   <div id="roshar-to-char" class="container">

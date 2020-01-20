@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
 function transcribe(text){
   const paragraphs = text.toUpperCase().split('\n');
-  const imageContainer = document.getElementById("image-container");
+  const imageContainer = $("#image-container")[0];
   imageContainer.innerHTML = '';
 
   paragraphs.forEach(paragraph => {
@@ -17,6 +17,10 @@ function transcribe(text){
 
     renderParagraph(charArray);
   });
+}
+
+function changeImageWidth(newWidth) {
+  $('.character').css('width', newWidth.concat('%'));
 }
 
 function renderParagraph(paragraphArray) {
@@ -32,7 +36,7 @@ function renderParagraph(paragraphArray) {
   }
 
   const paragraph = createParagraph(finalArray);
-  const imageContainer = document.getElementById("image-container");
+  const imageContainer = $("#image-container")[0];
   
   imageContainer.append(paragraph);
 }
@@ -53,7 +57,7 @@ function cleanSpecialCase(char){
 }
 
 function transcribeFromInput(){
-    const inputValue = document.getElementById("text-input").value;
+    const inputValue = $("#text-input")[0].value;
     transcribe(inputValue);
 }
 

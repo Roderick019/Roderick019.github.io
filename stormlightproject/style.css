@@ -4,6 +4,7 @@
 
 .paragraph {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .paragraph-separator {
@@ -11,11 +12,11 @@
 }
 
 .character {
-  width: 10%;
+  width: 5%;
 }
 
 .button-symbol {
-  width: 5%;
+  width: 4%;
   margin: 0.5rem;
 }
 
@@ -28,5 +29,5 @@
 }
 
 .container {
-  width: 50%;
+
 }
