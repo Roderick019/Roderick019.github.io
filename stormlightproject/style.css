@@ -12,7 +12,8 @@
 }
 
 .character {
-  width: 5%;
+  width: 6%;
+  margin-top: 10px;
 }
 
 .button-symbol {
@@ -26,6 +27,47 @@
 
 .button-symbol-label {
   color: black;
+}
+
+#roshar-to-char {
+  display: none;
+}
+
+#char-to-roshar {
+  display: flex;
+  margin: 0 10%;
+  margin-top: 5%;
+  flex-direction: column;
+}
+
+.char-to-roshar-title {
+  text-align: center;
+}
+
+.char-to-roshar-translate {
+  display: flex;
+}
+
+.char-to-roshar-translate-input {
+  margin-right: 2rem;
+  width: 25%;
+}
+
+#text-input {
+  width: 400px;
+  height: 400px;
+  margin-top: 2rem;
+}
+
+.special-case {
+  font-size: 7rem
+}
+
+.char-to-roshar-translate-output {
+  width: 400px;
+  height: 400px;
+  margin: 0rem 2rem 0 2rem;
+  width: 70%;
 }
 
 .container {

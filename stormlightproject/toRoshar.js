@@ -41,6 +41,16 @@ function renderParagraph(paragraphArray) {
   imageContainer.append(paragraph);
 }
 
+function showToWomensWriting(){
+  $('#roshar-to-char').hide();
+  $('#char-to-roshar').show();
+}
+
+function showToLatinWriting(){
+  $('#char-to-roshar').hide();
+  $('#roshar-to-char').show();
+}
+
 function cleanSpecialCase(char){
   switch(char){
     case 'Q':
@@ -71,7 +81,7 @@ function createParagraph(finalTextArray){
     if(element == " ") { 
       elementToAppend = createImg('SPACE', 'character');
     }else if( isSpecialCharacter(element) ) {
-      elementToAppend = createDiv("specialCase", element);
+      elementToAppend = createDiv("special-case", element);
     } else {
       elementToAppend = createImg(element, 'character');
     }
