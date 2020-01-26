@@ -1,5 +1,7 @@
 $( document ).ready(function() {
   transcribe('Hello world');
+  $('.char-to-roshar-title').on('click', showToWomensWriting);
+  $('.roshar-to-char-title').on('click', showToLatinWriting);
 });
 
 function transcribe(text){
@@ -100,6 +102,8 @@ function createImg(element, className){
   const img = document.createElement("img");
   img.src = "imgs/" + element + ".svg"
   img.className = className + ' ' + element
+  img.setAttribute('style', "width:"+$('.slider').val()+"%");
+
   return img;
 }
 

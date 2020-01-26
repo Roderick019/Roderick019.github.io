@@ -8,12 +8,21 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 <body> 
+  <div class="nav">
+    <h2 class="title char-to-roshar-title">To Women's writing</h2>
+    <h2 class="title roshar-to-char-title">To Latin Alphabet</h2>
+  </div>
   <div id="char-to-roshar" class="container">
-    <h2 class="char-to-roshar-title">To Women's writing</h2>
     <div class="char-to-roshar-translate">
       <div class="char-to-roshar-translate-input">
         <label>Text input</label>
         <textarea type="text" id="text-input" placeholder="Write something here" onkeyup="transcribeFromInput()"></textarea>
+        <span>Note: The Women's writing don't have special characters as: </span>
+        <ul>
+          <li>¿?!¡:., etc.</li>
+          <li>àáèáüö etc.</li>
+          <li>ÇÑ</li>
+        </ul>
       </div>
       <div class="char-to-roshar-translate-output">
         <label>Image size</label>
@@ -25,7 +34,6 @@
     </div>
   </div>
   <div id="roshar-to-char" class="container">
-    <h2>To Latin Alphabet</h2>
     <div id="grid-buttons"></div>
     <span id="words-container">test</span>
   </div>  
