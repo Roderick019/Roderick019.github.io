@@ -2,6 +2,12 @@
   width: 50px;
 }
 
+.words-container {
+  text-align: center;
+    width: auto;
+    font-size: 24px;
+}
+
 .paragraph {
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +90,6 @@
   cursor: pointer;
 }
 
-.container {
+#image-container {
 
 }

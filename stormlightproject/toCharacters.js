@@ -5,7 +5,6 @@ function createButtons(){
   const grid = document.getElementById("grid-buttons");
 
   grid.append(createButton('SPACE', ' ', '[ ]', 'SPACE'));
-
   characters.forEach(char => {
     const button = createButton(char, char, char, char);
     grid.append(button);
@@ -32,6 +31,11 @@ function createButton(nameURL, buttonSymbolAttr, innerHTML, className){
   button.append(label);
 
   return button;
+}
+
+function clearWordContainer() {
+  const printWord = document.getElementById('words-container');
+  printWord.innerHTML = '';
 }
 
 function printWord(event){
