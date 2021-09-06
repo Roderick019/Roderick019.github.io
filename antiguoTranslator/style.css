@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "antiguoFont";
+  src: url("antiguo_jesulink.ttf")
+}
+
+#antiguo-from-spanish {
+  font-family: "antiguoFont";
+  font-size: 40px;
+}
+
+.spanish-to-antiguo-text {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
