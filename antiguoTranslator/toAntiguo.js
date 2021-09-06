@@ -62,9 +62,9 @@ const knowCases =
 
 const vowelA = 'H'
 
-function transcribeFromInput(){
-  const inputValue = $("#text-input")[0].value.toLowerCase();
-  const span = $('#antiguo-from-spanish')[0]
+function transcribeTextFromInput(){
+  const inputValue = $("#text-input-text")[0].value.toLowerCase();
+  const span = $('#antiguo-from-spanish-text')[0]
 
   let procededText = inputValue
 
@@ -76,6 +76,25 @@ function transcribeFromInput(){
 
   span.innerHTML = procededText;
   console.log(procededText)
+}
+
+function transcribeNumberFromInput(){
+  const inputValue = $("#text-input-number")[0].value.toLowerCase();
+  const spanNumber = $('#antiguo-from-spanish-number')[0]
+
+  spanNumber.innerHTML = this.parseNumber(inputValue, 5);
+}
+
+function parseNumber(inputText, base) {
+  const number = parseInt(inputText)
+  const quotient = number / base
+  const remainder = number % base
+
+  if (quotient != 0) {
+    return parseNumber(quotient.toString(), base) + remainder.toString()
+  } 
+  
+  return ''
 }
 
 function replaceConstantsWithA(text) {
