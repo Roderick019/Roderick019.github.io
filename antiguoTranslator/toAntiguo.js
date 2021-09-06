@@ -63,7 +63,9 @@ const knowCases =
 const vowelA = 'H'
 
 function transcribeFromInput(){
-  const inputValue = $("#text-input")[0].value;
+  const inputValue = $("#text-input")[0].value.toLowerCase();
+  const span = $('#antiguo-from-spanish')[0]
+
   let procededText = inputValue
 
   procededText = this.replaceLettersWithSimbols(procededText)
@@ -72,7 +74,6 @@ function transcribeFromInput(){
 
   procededText = this.replaceConstantsWithA(procededText)
 
-  const span = $('#antiguo-from-spanish')[0]
   span.innerHTML = procededText;
   console.log(procededText)
 }
