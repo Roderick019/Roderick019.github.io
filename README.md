@@ -1,1 +1,0 @@
-# Cristian C. V.
