@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* ===================== VARIABLES ===================== */
+:root {
+    --color-principal: #1F3B6F;
+    --color-secundario: #F1F3F8;
+    --color-acento: #FF6F3C;
+    --color-texto: #212121;
+}
+
+/* ===================== LAYOUT GENERAL ===================== */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===================== TIPOGRAFÍA ===================== */
+h1, .h1 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+}
+h2, .h2 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0.6em;
+}
+h3, .h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+p, .card-text, .lead {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.btn, .btn-plus, a, .navbar-nav .nav-link {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+    background-color: var(--color-principal) !important;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-acento);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* ===================== JUMBOTRON ===================== */
+.jumbotron {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.jumbotron-overlay {
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff;
+}
+
+.jumbotron-overlay h1,
+.jumbotron-overlay p {
+    color: #ffffff;
+}
+
+.jumbotron-overlay > .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* ===================== CARDS ===================== */
+.card {
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-principal);
+    margin-bottom: 0.5em;
+}
+
+/* ===================== BOTONES ===================== */
+.btn-plus {
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    font-size: 1.2rem;
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    color: white;
+}
+
+.btn-plus:hover {
+    background-color: #FF6F3C;
+    color: #ffffff;
+}
+
+/* ===================== IMÁGENES ===================== */
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* ===================== CONTENIDO PRINCIPAL ===================== */
+main {
+    flex-grow: 1;
+    padding-top: 1rem;
+}
+
+section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+    background-color: var(--color-principal);
+    color: #ffffff;
+}
+
+.footer p, .footer span {
+    font-size: 0.9rem;
+}
+
+.footer-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo {
+    width: 40px;
+    height: auto;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* ===================== CAROUSEL EN EL JUMBOTRON ===================== */
+.jumbotron-overlay .carousel,
+.jumbotron-overlay .carousel-inner,
+.jumbotron-overlay .carousel-item {
+    height: 70vh;
+}
+
+.jumbotron-overlay .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #000;
+}
+
+.jumbotron-overlay .carousel-caption {
+    background-color: rgba(31, 59, 111, 0.55);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+
+/* ===================== MODAL ===================== */
+.custom-modal {
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.custom-modal-size {
+    max-width: 700px;
+    width: 90%;
+}
+
+.custom-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.modal-title {
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.modal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+#naranja {
+    color: #FF6F3C;
+}

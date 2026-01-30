@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light px-3">
+
+
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand d-flex align-items-center me-auto" href="#">
+                <img src="images/logo.png" alt="Logo" width="40" height="40" class="me-2">
+                Rodrigo Roldán
+            </a>
+
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+
+            <a id="lang-btn" class="btn btn-outline-secondary ms-3" href="ProyectosEng.html">ENG</a>
+
+        </nav>
+
+        <div class="jumbotron">
+            <div class="jumbotron-overlay d-flex align-items-center">
+                <div class="container text-center">
+                    <h1 class="display-4" id="naranja">Proyectos</h1>
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/projectos/trusty.png" class="d-block w-100" alt="Slide 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Trusty</h3>
+                                    <p>PFC de 2DAM</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/projectos/banco.jpg" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Banco Tiempo Florida</h3>
+                                    <p>P.I 2DAM</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/projectos/EN_Ruta_Fluvial_del_Jycar.jpg" class="d-block w-100"
+                                    alt="Slide 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>WEB SuAventura</h3>
+                                    <p>Proyecto Intermodular 2DAW</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/projectos/trabajo-correo-express-mozo-de-almacen-696x392.webp"
+                                    class="d-block w-100" alt="Slide 4">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Mozo Almacen</h3>
+                                    <p>Experiencia Laboral</p>
+                                </div>
+                            </div>
+                        </div>
+                        ¡
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="flex-grow-1" style="background-color:#F1F3F8">
+        <div class="container" style="background-color: #F1F3F8">
+            <div class="row text-center">
+
+                <article class="col-sm-12 col-md-3">
+                    <div class="card h-100 p-3">
+                        <img src="images/projectos/trusty.png" class="card-img-top mb-3" alt="Frontend">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Trusty</h3>
+                            <p class="card-text">
+                                PFC 2DAM
+                            </p>
+                            <div class="collapse" id="info1">
+                                <p class="card-text">
+
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary btn-plus mt-auto mx-auto"
+                                data-bs-toggle="modal" data-bs-target="#myModal1">
+                                +Ver más
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-sm-12 col-md-3">
+                    <div class="card h-100 p-3">
+                        <img src="images/projectos/banco.jpg" class="card-img-top mb-3" alt="Móvil">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Banco Tiempo Florida</h3>
+                            <p class="card-text">
+                                P.I 2DAM
+                            </p>
+                            <div class="collapse" id="info2">
+                                <p class="card-text">
+
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary btn-plus mt-auto mx-auto"
+                                data-bs-toggle="modal" data-bs-target="#myModal2">
+                                +Ver más
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-sm-12 col-md-3">
+                    <div class="card h-100 p-3">
+                        <img src="images/projectos/suaventura.png" class="card-img-top mb-3" alt="Aprendizaje">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">WEB SuAventura</h3>
+                            <p class="card-text">
+                                Proyecto Intermodular 2DAW
+                            </p>
+                            <div class="collapse" id="info3">
+                                <p class="card-text">
+
+                                </p>
+                            </div>
+
+                            <button type="button" class="btn btn-outline-primary btn-plus mt-auto mx-auto"
+                                data-bs-toggle="modal" data-bs-target="#myModal3">
+                                +Ver más
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-sm-12 col-md-3">
+                    <div class="card h-100 p-3">
+                        <img src="images/projectos/trabajo-correo-express-mozo-de-almacen-696x392.webp"
+                            class="card-img-top mb-3" alt="Aprendizaje">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Mozo Almacen</h3>
+                            <p class="card-text">
+                                Experiencia Laboral
+                            </p>
+                            <div class="collapse" id="info3">
+                                <p class="card-text">
+
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary btn-plus mt-auto mx-auto"
+                                data-bs-toggle="modal" data-bs-target="#myModal4">
+                                +Ver más
+                            </button>
+
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal 1 -->
+    <div class="modal fade" id="myModal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered custom-modal-size">
+
+            <div class="modal-content custom-modal">
+
+                <!-- Botón cerrar -->
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"></button>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h3 class="modal-title">Trusty</h3>
+
+
+                        <div class="modal-row">
+                            <span>Metodología</span>
+                            <div>SCRUM</div>
+                        </div>
+
+                        <div class="modal-row">
+                            <span>Tecnologias</span>
+                            <div>Java Springboot ReactNative</div>
+                        </div>
+
+                        <div class="modal-row">
+                            <span>Video Demo</span>
+                            <div><a href="https://www.youtube.com/watch?v=U_gl0XVPxZM&list=PL2pfUB7mZSwrvw5VDy_VzCHpZTT1_QF7r&index=1"
+                                    target="_blank">Ver Video</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal 2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered custom-modal-size">
+
+            <div class="modal-content custom-modal">
+
+                <!-- Botón cerrar -->
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"></button>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h3 class="modal-title">Banco del Tiempo Florida</h3>
+                    </div>
+
+
+                    <div class="modal-row">
+                        <span>Metodología</span>
+                        <div>SCRUM</div>
+                    </div>
+
+                    <div class="modal-row">
+                        <span>Tecnologias</span>
+                        <div>Java Springboot ReactNative</div>
+                    </div>
+
+                    <div class="modal-row">
+                        <span>Documento PDF</span>
+                        <div>
+                            <a href="images/PIBancoTiempoFlorida.pdf" class="btn btn-outline-primary">
+                                Ver PDF
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal 3 -->
+    <div class="modal fade" id="myModal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered custom-modal-size">
+
+            <div class="modal-content custom-modal">
+
+                <!-- Botón cerrar -->
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"></button>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h3 class="modal-title">Web SuAventura</h3>
+                    </div>
+
+
+                    <div class="modal-row">
+                        <span>Metodología</span>
+                        <div>SCRUM</div>
+                    </div>
+
+                    <div class="modal-row">
+                        <span>Tecnologias</span>
+                        <div>Angular Symfony Bootstrap</div>
+                    </div>
+
+                    <div class="modal-row">
+                        <span>Documento PDF</span>
+                        <div>
+                            <a href="images/SuAventura.pdf" class="btn btn-outline-primary">
+                                Ver PDF
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal 4 -->
+    <div class="modal fade" id="myModal4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered custom-modal-size">
+
+            <div class="modal-content custom-modal">
+
+                <!-- Botón cerrar -->
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"></button>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h3 class="modal-title">Experiencia Laboral</h3>
+                    </div>
+
+
+                    <div class="modal-row">
+                        <span>Empresas</span>
+                        <div>Correos Express/EULEN</div>
+                    </div>
+
+                    <div class="modal-row">
+                        <span>Experiencia</span>
+                        <div>1 año</div>
+                    </div>
+
+                    <div class="modal-row">
+                        <span>ETT</span>
+                        <div>
+                            <a href="https://interimgrouphr.com/" class="btn btn-outline-primary">
+                                Ver Web de empresa ETT
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-4">
+            <div class="row text-center text-md-start align-items-center">
+
+                <div class="col-sm-12 col-md-4">
+                    <img src="images/logo.png" alt="Logo" class="footer-logo mb-2">
+                    <p class="mb-0">© 2026 Rodrigo Roldán</p>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <h6 class="footer-title">¿Dónde estamos?</h6>
+                    <a href="https://maps.app.goo.gl/iGZJa9g63MHNMN4Q6" target="_blank">
+                        <img src="images/footer/Map.svg" alt="Ubicación" class="footer-icon me-2">
+                    </a>
+                    <span>Valencia, España</span>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <h6 class="footer-title">Contacto</h6>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="https://www.linkedin.com/in/rodrigo-roldan-2a9050252/" target="_blank">
+                            <img src="images/footer/linkedin-square-icon.svg" alt="LinkedIn" class="footer-icon">
+                        </a>
+                        <a href="mailto:rodrigoroldan99@gmail.com">
+                            <img src="images/footer/email-1573-svgrepo-com.svg" alt="Email" class="footer-icon">
+                        </a>
+
+                        <a href="tel:+34600241475">
+                            <img src="images/footer/telf.svg" alt="Teléfono" class="footer-icon">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

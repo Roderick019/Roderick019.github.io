@@ -1,57 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Inicio</title>
+    <title>Portfolio | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-sm">
-
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand d-flex align-items-center me-auto" href="#">
                 <img src="images/logo.png" alt="Logo" width="40" height="40" class="me-2">
                 Rodrigo Roldán
             </a>
-
-
             <div class="collapse navbar-collapse justify-content-center" id="menu">
                 <ul class="navbar-nav gap-4">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="indexEng.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ProyectosEng.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactoEng.html">Contact</a></li>
                 </ul>
             </div>
-
-
-            <a id="lang-btn" class="btn btn-outline-secondary" href="indexEng.html">ENG</a>
-
+            <a id="lang-btn" class="btn btn-outline-secondary" href="index.html">ES</a>
         </nav>
-
         <div class="jumbotron">
             <div class="jumbotron-overlay d-flex align-items-center"
                 style="background-image: url('images/jumbotron/pexels-nickkwanhk-2745258.jpg');">
                 <div class="container">
                     <img src="images/pfp.jfif" alt="Foto de Rodrigo Roldán" class="rounded-circle mb-4" width="150"
                         height="150">
-                    <h1 class="display-4">Hola, soy Rodrigo</h1>
+                    <h1 class="display-4">Hi, I'm Rodrigo</h1>
                     <p class="lead">
-                        Graduado en Desarrollo de Aplicaciones Multiplataforma, con interés en el desarrollo web y
-                        móvil, especialmente en el frontend.
+                        Graduate in Multiplatform Application Development, interested in web and mobile development,
+                        especially frontend.
                     </p>
                 </div>
             </div>
@@ -65,62 +52,59 @@
                     <div class="card h-100 p-3">
                         <img src="images/cards/web.svg" class="card-img-top mb-3" alt="Frontend">
                         <div class="card-body d-flex flex-column">
-                            <h3 class="card-title">Frontend moderno</h3>
+                            <h3 class="card-title">Modern Frontend</h3>
                             <p class="card-text">
-                                Diseño interfaces claras y centradas en el usuario.
+                                I design clear and attractive user-centered interfaces.
                             </p>
                             <div class="collapse" id="info1">
                                 <p class="card-text">
-                                    Trabajo con HTML, CSS, JavaScript y frameworks como Angular y React,
-                                    aplicando buenas prácticas y diseño responsivo.
+                                    I work with HTML, CSS, JavaScript and frameworks like Angular and React,
+                                    applying best practices and responsive design.
                                 </p>
                             </div>
                             <button class="btn btn-outline-primary btn-plus mt-auto mx-auto" data-bs-toggle="collapse"
-                                data-bs-target="#info1">+Ver más</button>
+                                data-bs-target="#info1">+See more</button>
                         </div>
+                    </div>
                 </article>
-
-                <article class="col-sm-12 col-md-4 ">
+                <article class="col-sm-12 col-md-4">
                     <div class="card h-100 p-3">
-                        <img src="images/cards/mobile.svg" class="card-img-top mb-3" alt="Móvil">
+                        <img src="images/cards/mobile.svg" class="card-img-top mb-3" alt="Mobile">
                         <div class="card-body d-flex flex-column">
-                            <h3 class="card-title">Desarrollo móvil</h3>
+                            <h3 class="card-title">Mobile Development</h3>
                             <p class="card-text">
-                                Creación de aplicaciones móviles multiplataforma.
+                                Creation of cross-platform mobile applications.
                             </p>
                             <div class="collapse" id="info2">
                                 <p class="card-text">
-                                    Desarrollo apps para Android e iOS utilizando React Native,
-                                    enfocándome en rendimiento y usabilidad.
+                                    I develop apps for Android and iOS using React Native, focusing on performance
+                                    and usability.
                                 </p>
                             </div>
                             <button class="btn btn-outline-primary btn-plus mt-auto mx-auto" data-bs-toggle="collapse"
-                                data-bs-target="#info2">+Ver más</button>
+                                data-bs-target="#info2">+See more</button>
                         </div>
                     </div>
                 </article>
-
-                <article class="col-sm-12 col-md-4 ">
+                <article class="col-sm-12 col-md-4">
                     <div class="card h-100 p-3">
-                        <img src="images/cards/grow.svg" class="card-img-top mb-3" alt="Aprendizaje">
+                        <img src="images/cards/grow.svg" class="card-img-top mb-3" alt="Learning">
                         <div class="card-body d-flex flex-column">
-                            <h3 class="card-title">Aprendizaje constante</h3>
+                            <h3 class="card-title">Continuous Learning</h3>
                             <p class="card-text">
-                                Actitud proactiva y ganas de seguir creciendo.
+                                Proactive attitude and desire to keep growing.
                             </p>
                             <div class="collapse" id="info3">
                                 <p class="card-text">
-                                    Me mantengo en formación continua, aprendiendo nuevas tecnologías
-                                    y mejorando mis habilidades como desarrollador.
+                                    I am constantly learning new technologies and improving my skills as a
+                                    developer.
                                 </p>
                             </div>
-
                             <button class="btn btn-outline-primary btn-plus mt-auto mx-auto" data-bs-toggle="collapse"
-                                data-bs-target="#info3">+Ver más</button>
+                                data-bs-target="#info3">+See more</button>
                         </div>
                     </div>
                 </article>
-
             </div>
         </div>
     </section>
@@ -128,22 +112,19 @@
     <footer class="footer">
         <div class="container py-4">
             <div class="row text-center text-md-start align-items-center">
-
                 <div class="col-sm-12 col-md-4">
                     <img src="images/logo.png" alt="Logo" class="footer-logo mb-2">
                     <p class="mb-0">© 2026 Rodrigo Roldán</p>
                 </div>
-
                 <div class="col-sm-12 col-md-4">
-                    <h6 class="footer-title">¿Dónde estamos?</h6>
+                    <h6 class="footer-title">Where are we?</h6>
                     <a href="https://maps.app.goo.gl/iGZJa9g63MHNMN4Q6" target="_blank">
-                        <img src="images/footer/Map.svg" alt="Ubicación" class="footer-icon me-2">
+                        <img src="images/footer/Map.svg" alt="Location" class="footer-icon me-2">
                     </a>
-                    <span>Valencia, España</span>
+                    <span>Valencia, Spain</span>
                 </div>
-
                 <div class="col-sm-12 col-md-4">
-                    <h6 class="footer-title">Contacto</h6>
+                    <h6 class="footer-title">Contact</h6>
                     <div class="d-flex justify-content-center justify-content-md-start gap-3">
                         <a href="https://www.linkedin.com/in/rodrigo-roldan-2a9050252/" target="_blank">
                             <img src="images/footer/linkedin-square-icon.svg" alt="LinkedIn" class="footer-icon">
@@ -151,18 +132,14 @@
                         <a href="mailto:rodrigoroldan99@gmail.com">
                             <img src="images/footer/email-1573-svgrepo-com.svg" alt="Email" class="footer-icon">
                         </a>
-
                         <a href="tel:+34600241475">
-                            <img src="images/footer/telf.svg" alt="Teléfono" class="footer-icon">
+                            <img src="images/footer/telf.svg" alt="Phone" class="footer-icon">
                         </a>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
